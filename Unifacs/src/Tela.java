@@ -135,7 +135,7 @@ public class Tela extends javax.swing.JFrame {
             new TelaSecundaria().setVisible(true);
         }else{
             
-            JOptionPane.showMessageDialog(null, "ACESSO NEGADO");
+            JOptionPane.showMessageDialog(null, "errou a senha fdp");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
