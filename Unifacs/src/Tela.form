@@ -60,8 +60,8 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jLabel3" min="-2" pref="87" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+              <Component id="jLabel3" min="-2" pref="100" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jTextFieldLogin" min="-2" max="-2" attributes="0"/>
@@ -96,6 +96,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JPasswordField" name="jPasswordFieldSenha">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jPasswordFieldSenhaActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
@@ -106,6 +109,11 @@
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="C:\Users\029142028\Downloads\unifacs-ins-log-g.png"/>
+        </Property>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>

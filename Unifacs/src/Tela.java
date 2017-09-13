@@ -53,6 +53,12 @@ public class Tela extends javax.swing.JFrame {
 
         jLabel2.setText("Senha :");
 
+        jPasswordFieldSenha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jPasswordFieldSenhaActionPerformed(evt);
+            }
+        });
+
         jButton1.setText("Entrar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,7 +66,7 @@ public class Tela extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Regina\\Desktop\\Nova pasta (2)\\lp_logo_unifacs.png")); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\029142028\\Downloads\\unifacs-ins-log-g.png")); // NOI18N
 
         jButton2.setText("Sair");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -95,8 +101,8 @@ public class Tela extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jTextFieldLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -135,6 +141,18 @@ public class Tela extends javax.swing.JFrame {
         
        System.exit(0);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jPasswordFieldSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordFieldSenhaActionPerformed
+        // TODO add your handling code here:
+         if (jTextFieldLogin.getText().equals("admin")&&jPasswordFieldSenha.getText().equals("admin")){
+            
+            new TelaSecundaria().setVisible(true);
+        }else{
+            
+            JOptionPane.showMessageDialog(null, "ACESSO NEGADO");
+        }
+      
+    }//GEN-LAST:event_jPasswordFieldSenhaActionPerformed
 
     /**
      * @param args the command line arguments
