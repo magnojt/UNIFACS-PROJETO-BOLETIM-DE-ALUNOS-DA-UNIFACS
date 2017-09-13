@@ -1,4 +1,5 @@
 
+import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 
 /*
@@ -58,6 +59,11 @@ public class Tela extends javax.swing.JFrame {
                 jPasswordFieldSenhaActionPerformed(evt);
             }
         });
+        jPasswordFieldSenha.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jPasswordFieldSenhaKeyPressed(evt);
+            }
+        });
 
         jButton1.setText("Entrar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -65,8 +71,6 @@ public class Tela extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\029142028\\Downloads\\unifacs-ins-log-g.png")); // NOI18N
 
         jButton2.setText("Sair");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -153,6 +157,21 @@ public class Tela extends javax.swing.JFrame {
         }
       
     }//GEN-LAST:event_jPasswordFieldSenhaActionPerformed
+
+    private void jPasswordFieldSenhaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPasswordFieldSenhaKeyPressed
+        // TODO add your handling code here:
+        
+        if(evt.getKeyCode()== KeyEvent.VK_ENTER){
+            if (jTextFieldLogin.getText().equals("admin")&&jPasswordFieldSenha.getText().equals("admin")){
+            
+            new TelaSecundaria().setVisible(true);
+        }else{
+            
+            JOptionPane.showMessageDialog(null, "ACESSO NEGADO");
+        }
+        
+        }
+    }//GEN-LAST:event_jPasswordFieldSenhaKeyPressed
 
     /**
      * @param args the command line arguments
