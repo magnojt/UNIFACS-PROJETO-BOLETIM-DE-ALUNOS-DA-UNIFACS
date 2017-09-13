@@ -121,7 +121,7 @@ public class Tela extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        if (jTextFieldLogin.getText().equals("144151080")&&jPasswordFieldSenha.getText().equals("06030454")){
+        if (jTextFieldLogin.getText().equals("admin")&&jPasswordFieldSenha.getText().equals("admin")){
             
             new TelaSecundaria().setVisible(true);
         }else{
