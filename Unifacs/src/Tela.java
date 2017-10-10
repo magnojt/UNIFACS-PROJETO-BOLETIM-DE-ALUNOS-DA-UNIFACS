@@ -1,24 +1,16 @@
 
+import Connect.Conexao;
 import java.awt.event.KeyEvent;
+import java.sql.Connection;
 import javax.swing.JOptionPane;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author Regina
- */
 public class Tela extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Tela
-     */
+   Connection conn = null;
     public Tela() {
         initComponents();
+        conn = Conexao.ConectDb();
     }
 
     /**
