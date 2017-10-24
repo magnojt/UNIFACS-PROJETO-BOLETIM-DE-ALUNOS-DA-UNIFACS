@@ -45,6 +45,7 @@ public class TelaLogin extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         CampoUsuario = new javax.swing.JTextField();
         CampoSenha = new javax.swing.JPasswordField();
+        jSobre = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Login");
@@ -102,6 +103,13 @@ public class TelaLogin extends javax.swing.JFrame {
             }
         });
 
+        jSobre.setText("Sobre");
+        jSobre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jSobreActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -110,8 +118,10 @@ public class TelaLogin extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jButton1)
+                        .addComponent(jSobre)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton1)
+                        .addGap(18, 18, 18)
                         .addComponent(jButton2))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(32, 32, 32)
@@ -120,7 +130,7 @@ public class TelaLogin extends javax.swing.JFrame {
                             .addComponent(jLabel2))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(CampoUsuario)
+                            .addComponent(CampoUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
                             .addComponent(CampoSenha))))
                 .addContainerGap())
         );
@@ -138,7 +148,8 @@ public class TelaLogin extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(jButton2)
+                    .addComponent(jSobre))
                 .addContainerGap())
         );
 
@@ -185,6 +196,13 @@ public class TelaLogin extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_CampoSenhaKeyPressed
 
+    private void jSobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jSobreActionPerformed
+       Sobre obj = new Sobre ();
+         obj.setVisible (true);
+ 
+    
+    }//GEN-LAST:event_jSobreActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -200,6 +218,7 @@ public class TelaLogin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JButton jSobre;
     // End of variables declaration//GEN-END:variables
 
     private void entrar() {

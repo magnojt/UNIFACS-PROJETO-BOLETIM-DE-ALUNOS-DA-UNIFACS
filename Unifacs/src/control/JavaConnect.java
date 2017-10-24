@@ -11,7 +11,7 @@ public class JavaConnect {
     public static Connection ConectDb (){
      try{
       Class.forName("org.sqlite.JDBC");
-      Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Regina\\Documents\\NetBeansProjects\\Unifacs\\unifacs.sqlite");
+      Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Léo Dantas\\Documents\\UNIFACS\\UNIFACS-PROJETO-BOLETIM-DE-ALUNOS-DA-UNIFACS\\Unifacs");
        //JOptionPane.showMessageDialog(null,"Bem vindo, Banco de dados conectado");
         return conn ;
      }catch(Exception e){
